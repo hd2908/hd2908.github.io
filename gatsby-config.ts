@@ -3,13 +3,22 @@ import type { GatsbyConfig } from 'gatsby'
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `h2do`,
-    siteUrl: `https://www.yourdomain.tld`,
+    description: 'h2do',
+    author: 'h2do',
+    siteUrl: `https://www.hd2908.github.io/`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://hd2908.github.io/',
+        stripQueryString: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {

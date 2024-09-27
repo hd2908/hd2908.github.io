@@ -8,17 +8,20 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
     "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write",
+    "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "test": "echo && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "gatsby": "^5.13.7",
     "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-canonical-urls": "^5.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-postcss": "^6.13.1",
     "gatsby-plugin-typescript": "^5.13.1",
@@ -39,6 +42,7 @@
     "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.3.3",
     "typescript": "^5.6.2"
   }
