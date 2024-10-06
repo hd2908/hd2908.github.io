@@ -8,6 +8,8 @@
     "moduleResolution": "node",
     "baseUrl": "./src",
     "paths": {
+      "icons/*": ["./assets/images/icons/*"],
+      "images/*": ["./assets/images/*"],
       "components/*": ["./components/*"],
       "utils/*": ["./utils/*"],
       "hooks/*": ["./hooks/*"]
@@ -18,6 +20,7 @@
     "skipLibCheck": true
   },
   "include": [
+    "./src/static.d.ts",
     "./src/**/*",
     "./gatsby-node.ts",
     "./gatsby-config.ts",

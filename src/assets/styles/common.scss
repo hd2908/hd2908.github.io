@@ -1,0 +1,26 @@
+.boarding-shadow {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 8px;
+    right: 0;
+    background-color: rgba(25, 25, 25, 0.18);
+    z-index: 0;
+    @apply rounded-tl-2xl rounded-bl-2xl;
+  }
+}
+.ticket-shadow {
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 100%;
+    top: 8px;
+    left: 0;
+    background-color: rgba(25, 25, 25, 0.18);
+    z-index: 0;
+    @apply rounded-tr-2xl rounded-br-2xl;
+  }
+}

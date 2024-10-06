@@ -13,6 +13,22 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: 'https://hd2908.github.io/',
@@ -23,6 +39,8 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
+          '@icons': 'src/assets/images/icons',
+          '@images': 'src/assets/images',
           '@src': 'src',
           '@components': 'src/components',
           '@pages': 'src/pages',
@@ -41,9 +59,7 @@ const config: GatsbyConfig = {
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-manifest',
-      options: {
-        icon: 'src/images/icon.png',
-      },
+      options: { icon: 'src/images/icon.png' },
     },
     'gatsby-transformer-remark',
     {
