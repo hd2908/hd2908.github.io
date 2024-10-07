@@ -15,7 +15,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy:dev": "gatsby build && gh-pages -d public -b deploy/DEV"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
