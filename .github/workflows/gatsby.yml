@@ -17,7 +17,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest  # 최신 Ubuntu 환경에서 실행
     steps:
-      - uses: actions/checkout@v1  # 코드 리포지토리를 체크아웃합니다.
+      - uses: actions/checkout@v4 # 코드 리포지토리를 체크아웃합니다.
       - uses: enriikke/gatsby-gh-pages-action@v2  
         with:
           access-token: ${{ secrets.HDLOG_KEY }}  # GitHub Secrets에 저장된 액세스 토큰을 사용하여 배포합니다.
