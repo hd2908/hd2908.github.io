@@ -1,7 +1,4 @@
 import React, { useState, FunctionComponent } from 'react'
-import Airplane from '@icons/airplane.svg'
-import Airplane2 from '@icons/airplane2.svg'
-import Airplane3 from '@icons/airplane3.svg'
 const BoardingInfo: FunctionComponent = function () {
   return (
     <>
@@ -21,8 +18,8 @@ const BoardingInfo: FunctionComponent = function () {
         <div className="flex flex-col text-gray-700"></div>
         <div className="flex flex-col text-gray-700 justify-between h-full">
           <div>
-            <p className="text-gray-400 font-medium">FROM</p>
-            <p className="text-xl font-bold">SEOUL</p>
+            <p className="text-gray-400 font-medium">TO</p>
+            <p className="text-xl font-bold">Anywhere</p>
           </div>
           <div>
             <p className="text-gray-400 font-medium">EMAIL</p>
