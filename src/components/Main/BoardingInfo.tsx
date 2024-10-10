@@ -23,7 +23,7 @@ const BoardingInfo: FunctionComponent = function () {
           </div>
           <div>
             <p className="text-gray-400 font-medium">EMAIL</p>
-            <p className="text-sm font-bold">LIMHD6958@GMAIL.COM</p>
+            <p className="text-sm font-bold">LIMHD2908@GMAIL.COM</p>
           </div>
         </div>
         <div className="flex flex-col text-gray-700"></div>
