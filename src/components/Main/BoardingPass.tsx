@@ -31,7 +31,7 @@ const BoardingPass: FunctionComponent = function () {
           <div
             className={`w-full bg-blue-700 p-4 pr-6 text-white font-bold h-[64px] flex items-center text-center justify-center rounded-tr-2xl z-[1]`}
           >
-            BOARDING PASS
+            ✈️BOARDING PASS
           </div>
           <div className="w-full bg-white h-72 rounded-br-2xl z-[1] p-8"></div>
         </div>
