@@ -13,6 +13,12 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 500,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {

@@ -23,6 +23,7 @@
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-canonical-urls": "^5.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-page-transitions": "^1.0.8",
     "gatsby-plugin-postcss": "^6.13.1",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sass": "^6.13.1",
